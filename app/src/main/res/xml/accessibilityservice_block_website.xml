@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:accessibilityEventTypes="typeWindowStateChanged"
+    android:accessibilityFeedbackType="feedbackAllMask"
+    android:accessibilityFlags="flagIncludeNotImportantViews"
+    android:description="@string/accessibility_service_description"
+    android:canRetrieveWindowContent="true"
+    android:notificationTimeout="0"
+    android:canRequestFilterKeyEvents="true"
+    tools:ignore="UnusedAttribute" />
+
+<!--<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:accessibilityEventTypes="typeWindowStateChanged"-->
+<!--android:accessibilityFeedbackType="feedbackGeneric"-->
+<!--android:accessibilityFlags="flagIncludeNotImportantViews"-->
+<!--android:description="@string/accessibility_service_description"-->
+<!--tools:ignore="UnusedAttribute" />-->
