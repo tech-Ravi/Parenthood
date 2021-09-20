@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background_blue"
+    tools:context=".AppHelperActivities.LoginActivity">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/cyslogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/login_logo"
+            android:layout_centerHorizontal="true"
+            android:textColor="#4978f0"
+            android:textSize="25dp"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:letterSpacing=".05"
+            android:text="Home Page"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarThumbHorizontal="@null">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="Study"/>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp">
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="10sp"
+                    app:on="true"
+                    app:colorOn="#000000"
+                    app:colorBorder="@color/black"/>
+                </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="Exam"/>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp">
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="10sp"
+                        android:layout_marginTop="2dp"
+                        app:on="false"
+                        app:colorOn="#000000"
+                        app:colorBorder="@color/black"/>
+                </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="Kids"/>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="20dp">
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="10sp"
+                        app:on="false"
+                        app:colorOn="#000000"
+                        app:colorBorder="@color/black"/>
+                </FrameLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/darker_gray"/>
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/viewpagertab"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/divider1"
+        app:stl_clickable="true"
+        android:layout_marginStart="150dp"
+        app:stl_defaultTabBackground="?attr/selectableItemBackgroundBorderless"
+        app:stl_defaultTabTextAllCaps="true"
+        app:stl_defaultTabTextColor="#4978f0"
+        app:stl_defaultTabTextHorizontalPadding="16dp"
+        app:stl_defaultTabTextMinWidth="0dp"
+        app:stl_defaultTabTextSize="15sp"
+        app:stl_distributeEvenly="false"
+        app:stl_dividerColor="#00000000"
+        app:stl_dividerThickness="1dp"
+        app:stl_drawDecorationAfterTab="false"
+        app:stl_indicatorAlwaysInCenter="false"
+        app:stl_indicatorColor="#4978f0"
+        app:stl_indicatorCornerRadius="2dp"
+        app:stl_indicatorGravity="@null"
+        app:stl_indicatorInFront="false"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="4dp"
+        app:stl_indicatorWidth="auto"
+        app:stl_indicatorWithoutPadding="false"
+        app:stl_overlineColor="#00000000"
+        app:stl_overlineThickness="0dp"
+        app:stl_titleOffset="24dp"
+        app:stl_underlineColor="#00000000"
+        app:stl_underlineThickness="1dp" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewpagertab"
+        />
+    
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/divider1"
+        android:padding="5dp"
+        android:tint="#4978f0"
+        android:src="@drawable/ic_baseline_menu_24"/>
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/text3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="15dp"-->
+<!--        android:layout_marginBottom="70dp"-->
+<!--        android:letterSpacing=".05"-->
+<!--        android:text="@string/connect_with"/>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentBottom="true">-->
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:src="@drawable/ic_google"/>-->
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:src="@drawable/ic_fb"/>-->
+
+<!--    </LinearLayout>-->
+
+
+</RelativeLayout>

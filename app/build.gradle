@@ -62,4 +62,14 @@ dependencies {
     //for Lottie Animation
     def lottieVersion = "3.4.0"
     implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    //for toggle Switch
+    implementation 'com.github.angads25:toggle:1.1.0'
+
+
+    //for Tab layout
+    implementation 'com.ogaclejapan.smarttablayout:library:2.0.0@aar'
+
+    //Optional: see how to use the utility.
+    implementation 'com.ogaclejapan.smarttablayout:utils-v4:2.0.0@aar'
 }
