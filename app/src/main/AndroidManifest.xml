@@ -22,16 +22,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CYSAndroidApp">
         <activity
-            android:name=".SignupActivity"
+            android:name=".AppHelperActivities.SignupActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".AppHelperActivities.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".AppHelperActivities.HomePageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AppHelperActivities.SplashScreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
-            android:label="@string/title_activity_splash_screen"
             android:theme="@style/Theme.CYSAndroidApp.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
