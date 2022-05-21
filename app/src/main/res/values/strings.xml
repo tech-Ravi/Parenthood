@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CYS Android App</string>
+    <string name="app_name">Parenthood</string>
 
     <string name="connect_with"><u>Or connect with</u></string>
     <string name="btnlogin">Login</string>
@@ -39,8 +39,8 @@
     <string name="delete">delete</string>
     <string name="mobile_data">Mobile Data</string>
     <string name="outgoing_calls">OutGoing Calls</string>
-    <string name="accessibility_service_name">CYS App - App Block Service</string>
-    <string name="accessibility_service_name_website">CYS App - Website Block Service</string>
+    <string name="accessibility_service_name">Parenthood (CYS) App - App Block Service</string>
+    <string name="accessibility_service_name_website">Parenthood (CYS) App - Website Block Service</string>
     <string name="accessibility_service_description">Just for Test</string>
     <string name="aboutTitle">About</string>
     <string name="yes">yes</string>
@@ -78,8 +78,8 @@
     <string name="cancel">Cancel</string>
     <string name="historysettingtitle">Turn history on/off</string>
     <string name="hisDesc">turn on if you don\'t want see child\'s history</string>
-    <string name="shutTitle">Shutdown CYS</string>
-    <string name="shutDesc">Check if you want to stop controlling application using CYS</string>
+    <string name="shutTitle">Shutdown Parenthood</string>
+    <string name="shutDesc">Check if you want to stop controlling application using Parenthood</string>
     <string name="app_block_method">Choose how app should block</string>
     <string name="blockapp">Show block app screen</string>
     <string name="listapp">Listing apps</string>
