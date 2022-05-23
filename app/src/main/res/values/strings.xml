@@ -2,6 +2,19 @@
     <string name="app_name">Parenthood</string>
 
     <string name="connect_with"><u>Or connect with</u></string>
+    <string name="long_text">Education is the process of facilitating learning, or the acquisition
+of knowledge, skills, values, morals, beliefs, and habits.
+Educational methods include teaching, training, storytelling,
+discussion and directed research. Education frequently takes place
+under the guidance of educators, however learners can also
+educate themselves. Education can take place in formal or
+informal settings and any experience that has a formative effect
+on the way one thinks, feels, or acts may be considered
+educational. The methodology of teaching is called pedagogy.
+
+Formal education is commonly divided formally into such stages
+as preschool or kindergarten, primary school, secondary school
+and then college, university, or apprenticeship.</string>
     <string name="btnlogin">Login</string>
     <string name="LogInText">Enter Login Id</string>
     <string name="PasswordText">Enter Password</string>
@@ -39,8 +52,8 @@
     <string name="delete">delete</string>
     <string name="mobile_data">Mobile Data</string>
     <string name="outgoing_calls">OutGoing Calls</string>
-    <string name="accessibility_service_name">Parenthood (CYS) App - App Block Service</string>
-    <string name="accessibility_service_name_website">Parenthood (CYS) App - Website Block Service</string>
+    <string name="accessibility_service_name">Parenthood(CYS) App - App Block Service</string>
+    <string name="accessibility_service_name_website">Parenthood(CYS) App - Website Block Service</string>
     <string name="accessibility_service_description">Just for Test</string>
     <string name="aboutTitle">About</string>
     <string name="yes">yes</string>

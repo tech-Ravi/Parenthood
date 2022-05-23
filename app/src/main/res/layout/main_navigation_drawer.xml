@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/btnNavigationClose"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_round_arrow_back_ios_24"
+        android:tint="#4978f0" />
+
+    <FrameLayout
+        android:id="@+id/userimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userProfilePic"
+            android:layout_width="140dp"
+            android:layout_height="148dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_login_logo"
+            android:tint="#4978f0" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/username1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userimg"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="ACCOUNT NAME"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username1"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="View Activity > >"
+        android:textColor="@color/black" />
+    <LinearLayout
+        android:layout_below="@+id/btn_edit_profile"
+        android:layout_width="match_parent"
+        android:background="#b1d5fd"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/btnChats"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/send_icon"
+                 />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/accent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Messages"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnManageApp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_android_play_24dp"
+                android:tint="@color/black" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/accent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage Apps"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_people_alt_24"
+                android:tint="@color/black" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/accent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/ic_baseline_language_24"
+                android:tint="@color/black" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/accent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Language"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnUpdateTime"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/ic_baseline_av_timer_24"
+                android:tint="@color/black" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/accent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Timetable"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/ic_baseline_settings_24"
+                android:tint="@color/black" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/accent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btn_rate_us"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/ic_baseline_star_rate_24"
+                android:tint="@color/black" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/accent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:text="Rate Us"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btn_contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/ic_baseline_contactus_24"
+                android:tint="@color/black" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/accent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:text="Contact Us"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btnShareApp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/ic_menu_share"
+                android:tint="@color/black" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/accent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share App "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_marginBottom="100dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/ic_baseline_logout_24"
+                android:tint="@color/black" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/accent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:text="Logout"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:background="@drawable/dialog_rounded_bg">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/headerview"
+    android:layout_marginTop="25dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Follow these steps to activate Exam Mode and also Allow CYS App to access this device?"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"/>
+</FrameLayout>
+
+    <TextView
+        android:id="@+id/text_step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerview"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="Step 1:- Press Ok to give permission or Press Cancel to remove dialog."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/step1_img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/step1_img"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:scaleType="centerInside"
+        android:layout_below="@+id/text_step1"/>
+
+    <TextView
+        android:id="@+id/text_step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 2:- Allow these 2 Services permission to have control your device."
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/step1_img"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+    <ImageView
+        android:id="@+id/step2_img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/step2_img"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:scaleType="centerInside"
+        android:layout_below="@+id/text_step2"/>
+
+    <TextView
+        android:id="@+id/text_step3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 3:- Allow CYS App Service to have full control of your device."
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/step2_img"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+    <ImageView
+        android:id="@+id/step3_img"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/step3_img"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:scaleType="centerInside"
+        android:layout_below="@+id/text_step3"/>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/dont_ask_check_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/step3_img">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:text="Don't show this dialog again."/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/dont_ask_check_box">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/btn_cancel"
+
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/btn_ok"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>

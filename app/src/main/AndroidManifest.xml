@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cysandroidapp">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.parenthoodandroidapp">
 
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -12,6 +13,8 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
 
     <application
         android:allowBackup="true"
@@ -21,17 +24,41 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CYSAndroidApp">
+
         <activity
-            android:name=".AppHelperActivities.SignupActivity"
+            android:name="com.example.parenthoodandroidapp.AppHelperActivities.SignupActivity"
             android:exported="true" />
         <activity
-            android:name=".AppHelperActivities.LoginActivity"
+            android:name="com.example.parenthoodandroidapp.AppHelperActivities.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".AppHelperActivities.HomePageActivity"
+            android:name="com.example.parenthoodandroidapp.AppHelperActivities.HomePageActivity"
             android:exported="true" />
         <activity
-            android:name=".AppHelperActivities.SplashScreenActivity"
+            android:name="com.example.parenthoodandroidapp.AppHelperActivities.AboutActivity2"
+            android:exported="true" />
+        <activity
+            android:name="com.example.parenthoodandroidapp.AppHelperActivities.RateUsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.parenthoodandroidapp.AppHelperActivities.UpdateTimeTableActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.parenthoodandroidapp.AppHelperActivities.ShareAppActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.parenthoodandroidapp.AppHelperActivities.ContactUsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.parenthoodandroidapp.ChatsActivities.AllChatsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.parenthoodandroidapp.ChatsActivities.chat.Chat"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.parenthoodandroidapp.AppHelperActivities.SplashScreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
             android:theme="@style/Theme.CYSAndroidApp.Fullscreen">
@@ -43,7 +70,7 @@
         </activity>
 
         <receiver
-            android:name=".DevAdmRec"
+            android:name="com.example.parenthoodandroidapp.DevAdmRec"
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.BIND_DEVICE_ADMIN">
@@ -59,7 +86,7 @@
         </receiver>
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.parenthoodandroidapp.MainActivity"
             android:exported="true">
 
             <!-- <intent-filter> -->
@@ -70,17 +97,17 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".AboutActivity"
+            android:name="com.example.parenthoodandroidapp.AboutActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".SettingActivity">
+        <activity android:name="com.example.parenthoodandroidapp.SettingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-        <activity android:name=".AppHistoryActivity" />
+        <activity android:name="com.example.parenthoodandroidapp.AppHistoryActivity" />
 
         <receiver
-            android:name=".WifiReceiver"
+            android:name="com.example.parenthoodandroidapp.WifiReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter android:priority="100">
@@ -91,30 +118,30 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".DeviceControlActivity">
+        <activity android:name="com.example.parenthoodandroidapp.DeviceControlActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-        <activity android:name=".TaskList">
+        <activity android:name="com.example.parenthoodandroidapp.TaskList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-        <activity android:name=".AppSettingActivity">
+        <activity android:name="com.example.parenthoodandroidapp.AppSettingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".BlockActivity"
+            android:name="com.example.parenthoodandroidapp.BlockActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleTop"
             android:taskAffinity="com.sonyericsson.home"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".AppList"
+            android:name="com.example.parenthoodandroidapp.AppList"
             android:label="Tasks"
             android:theme="@style/AppTheme">
             <intent-filter>
@@ -122,12 +149,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AdsBlock.BlockAdsActivity"
+            android:name="com.example.parenthoodandroidapp.AdsBlock.BlockAdsActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".AdsBlock.vpn.AutoLaunchActivity"
+            android:name="com.example.parenthoodandroidapp.AdsBlock.vpn.AutoLaunchActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -136,14 +163,14 @@
             </intent-filter>
         </activity> <!-- Services -->
         <service
-            android:name=".AdsBlock.vpn.MainVpnService"
+            android:name="com.example.parenthoodandroidapp.AdsBlock.vpn.MainVpnService"
             android:permission="android.permission.BIND_VPN_SERVICE">
             <intent-filter>
                 <action android:name="android.net.VpnService" />
             </intent-filter>
         </service> <!-- Receivers -->
         <receiver
-            android:name=".AdsBlock.receivers.BootUpReceiver"
+            android:name="com.example.parenthoodandroidapp.AdsBlock.receivers.BootUpReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter android:priority="500">
@@ -152,7 +179,7 @@
         </receiver>
 
         <service
-            android:name=".SearchRunningApp2"
+            android:name="com.example.parenthoodandroidapp.SearchRunningApp2"
             android:label="@string/accessibility_service_name"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
@@ -164,7 +191,7 @@
                 android:resource="@xml/accessibilityservice" />
         </service>
         <service
-            android:name=".UrlInterceptor.UrlInterceptorService"
+            android:name="com.example.parenthoodandroidapp.UrlInterceptor.UrlInterceptorService"
             android:label="@string/accessibility_service_name_website"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
@@ -175,6 +202,18 @@
                 android:name="android.accessibilityservice"
                 android:resource="@xml/accessibilityservice_block_website" />
         </service>
-    </application>
 
+        <service android:name="com.example.parenthoodandroidapp.HelperClasses.NotificationListener"
+            android:label="CYS App - Notification Blocker"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+    </application>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+    </queries>
 </manifest>

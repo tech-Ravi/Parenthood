@@ -1,12 +1,13 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
     compileSdk 30
 
     defaultConfig {
-        applicationId "com.example.cysandroidapp"
+        applicationId "com.example.parenthoodandroidapp"
         minSdk 21
         targetSdk 30
         versionCode 1
@@ -31,7 +32,6 @@ android {
 }
 
 dependencies {
-
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
@@ -69,7 +69,40 @@ dependencies {
 
     //for Tab layout
     implementation 'com.ogaclejapan.smarttablayout:library:2.0.0@aar'
-
-    //Optional: see how to use the utility.
     implementation 'com.ogaclejapan.smarttablayout:utils-v4:2.0.0@aar'
+
+    //for otp view
+    implementation 'com.chaos.view:pinview:1.4.3'
+
+    //Glide Library
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //for API
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.google.code.gson:gson:2.6.1'
+
+
+    //for Firebase
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    //add this
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    //for Circular images
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.google.firebase:firebase-messaging:17.3.1'
+
+    //for Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //for image viewer
+    implementation 'com.github.piasy:GlideImageLoader:1.8.1'
 }

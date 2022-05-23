@@ -12,20 +12,39 @@
         android:layout_height="40dp"
         android:src="@mipmap/ic_launcher"/>
 
-    <ImageView
-        android:id="@+id/login_logo"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/ic_login_logo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        app:tint="#F30000" />
+    <FrameLayout
+        android:id="@+id/user_dp_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/user_icon"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            app:tint="#F30000" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginStart="38dp"
+            android:src="@drawable/ic_baseline_cloud_upload_24"
+            android:tint="@color/white" />
+
+
+    </FrameLayout>
+
 
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/login_logo"
+        android:layout_below="@+id/user_dp_view"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:letterSpacing=".05"
@@ -51,10 +70,11 @@
         android:layout_below="@+id/text2"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="40dp"
-        android:textColor="@color/black"
+        android:paddingHorizontal="20dp"
         android:background="@drawable/rounded_edit_text"
         android:hint="Full Name:"
         android:paddingStart="15dp"
+        android:textColor="@color/black"
         android:textColorHint="#575757" />
 
     <EditText
@@ -64,13 +84,15 @@
         android:layout_below="@+id/et_fullname"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="20dp"
-        android:drawablePadding="10dp"
-        android:paddingEnd="10dp"
-        android:textColor="@color/black"
         android:background="@drawable/rounded_edit_text"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="20dp"
         android:hint="Email:"
         android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/black"
         android:textColorHint="#575757" />
+
     <EditText
         android:id="@+id/et_password"
         android:layout_width="match_parent"
@@ -78,14 +100,16 @@
         android:layout_below="@+id/et_email"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="20dp"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableRight="@drawable/ic_baseline_visibility_off_24"
         android:drawablePadding="10dp"
+        android:drawableTint="#575757"
+        android:hint="Password:"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
         android:paddingEnd="10dp"
         android:textColor="@color/black"
-        android:drawableRight="@drawable/ic_baseline_visibility_off_24"
-        android:drawableTint="#575757"
-        android:background="@drawable/rounded_edit_text"
-        android:hint="Password:"
-        android:paddingStart="15dp"
         android:textColorHint="#575757" />
     <TextView
         android:id="@+id/btnForgetPassword"
@@ -121,18 +145,20 @@
         android:text="Already have an account?? "
         android:textColor="@color/black"
         android:textSize="15dp" />
+
     <TextView
-        android:id="@+id/signuptext2"
+        android:id="@+id/backToLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnSignup"
-        android:layout_toRightOf="@+id/signuptext"
         android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/signuptext"
+        android:letterSpacing=".05"
+        android:text="Log In"
+        android:clickable="true"
         android:textColor="@color/black"
         android:textSize="15dp"
-        android:textStyle="bold"
-        android:letterSpacing=".05"
-        android:text="Log In"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text3"
